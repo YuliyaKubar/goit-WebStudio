@@ -1,0 +1,152 @@
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: auto;
+   
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--fourth-color);
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 48px 84px 48px 40px;
+    background-color: var(--fourth-color);
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #212121;   
+}
+
+.icon-close {
+    fill: currentColor;
+    
+        &:focus,
+        &:hover {
+            color: var(--third-color);
+        }
+}
+
+.mobile-menu {  
+    margin: 0;
+    list-style: none;
+    margin-bottom: auto;
+}
+
+.mobile-menu .link {
+    display: block;
+    color: var(--color);
+    text-decoration: none;
+}
+
+.mobile-menu__nav {
+    margin-bottom: 32px;
+}
+
+.mobile-menu__nav:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    &:hover, &:focus {
+        color: var(--third-color);
+    }
+}
+
+.mobile-contacts {
+    list-style: none;
+    
+}   
+
+.mobile-contacts__address {
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__address:last-child {
+    margin-bottom: 64px;
+}
+
+.menu-phone {
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    color: var(--third-color);
+}
+
+.menu-mail {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+    &:hover, &:focus{
+        color: var(--third-color);
+    }
+}
+
+
+
+.mobile-social-media {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.media {
+    
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--third-color);
+    text-decoration: none;
+    
+    &.lines::after {
+        
+        content: " ";
+        height: 22px;
+        background: rgba(33, 33, 33, 0.2);
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+
+}
+   
+
+
