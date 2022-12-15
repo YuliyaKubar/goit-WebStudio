@@ -15,7 +15,6 @@
 .header-list-item {
     position: relative;
 
-
     &.line::before {
         position: absolute;
         content: " ";
@@ -26,6 +25,9 @@
         background: var(--third-color);
         border-radius: 2px;
         opacity: 1;
+    }
+    &.line {
+        color: var(--third-color);
     }
 }
 
@@ -113,7 +115,7 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--color);
-}
+}    
 
 .link:focus,
 .link:hover {

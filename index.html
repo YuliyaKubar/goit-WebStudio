@@ -148,19 +148,46 @@
           <ul class="do__image list">
             <li class="do__image-item">
               <div class="thumb">
-                <img src="./image/computer.jpg" alt="Компьютер" width="370" />
+                <img
+                  srcset="
+                    ./image/computer.jpg     370w,
+                    ./image/computer_740.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  src="./image/computer.jpg"
+                  alt="Компьютер"
+                  width="370"
+                />
                 <p class="do__title">Десктопні додатки</p>
               </div>
             </li>
             <li class="do__image-item">
               <div class="thumb">
-                <img src="./image/telephon.jpg" alt="Телефон" width="370" />
+                <img
+                  srcset="
+                    ./image/telephon.jpg      370w,
+                    ./image/telephone_740.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  src="./image/telephon.jpg"
+                  alt="Телефон"
+                  width="370"
+                />
                 <p class="do__title">Мобільні додатки</p>
               </div>
             </li>
             <li class="do__image-item">
               <div class="thumb">
-                <img src="./image/planshet.jpg" alt="Планшет" width="370" />
+                <img
+                  srcset="
+                    ./image/planshet.jpg     370w,
+                    ./image/planshet_740.jpg 740w
+                  "
+                  sizes="(min-width: 1200px) 370px, 100vw"
+                  src="./image/planshet.jpg"
+                  alt="Планшет"
+                  width="370"
+                />
                 <p class="do__title">Дизайнерські рішення</p>
               </div>
             </li>
