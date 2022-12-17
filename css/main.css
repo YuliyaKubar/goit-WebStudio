@@ -738,11 +738,23 @@ img {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-conteiner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .footer__logo-address {
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__logo-address {
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -842,7 +854,6 @@ img {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .join {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -941,7 +952,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mailing {
     margin-top: 60px;
-    padding-left: 166px;
   }
 }
 .mailing__title {
