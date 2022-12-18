@@ -6,7 +6,13 @@
     }
     @media screen and (max-width: 1199px) {
         margin-top: 60px;
+    
     }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
 
     &__title {
         display: flex;

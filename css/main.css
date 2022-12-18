@@ -954,6 +954,11 @@ img {
     margin-top: 60px;
   }
 }
+@media screen and (min-width: 480px) {
+  .mailing {
+    width: 450px;
+  }
+}
 .mailing__title {
   display: -webkit-box;
   display: -ms-flexbox;
